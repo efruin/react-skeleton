@@ -19669,7 +19669,7 @@ process.umask = function() { return 0; };
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
 
-var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "potatoes" }];
+var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "bacon" }];
 
 var List = React.createClass({
   displayName: 'List',
@@ -19698,11 +19698,7 @@ var ListItem = React.createClass({
     return React.createElement(
       'li',
       null,
-      React.createElement(
-        'h4',
-        null,
-        this.props.ingredient
-      )
+      this.props.ingredient
     );
   }
 });
